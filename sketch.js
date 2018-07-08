@@ -1,9 +1,10 @@
 function setup() {
     createCanvas(640, 480);
-    draw()
+    background(190)
 }
 
 function draw() {
+
     if (mouseIsPressed) {
         drawRectangle(mouseX, mouseY)
     } else {
