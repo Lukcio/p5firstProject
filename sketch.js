@@ -1,19 +1,16 @@
 function setup() {
-    // put setup code here
-
+    createCanvas(640, 480);
+    draw()
 }
 
 function draw() {
-    // put drawing code here
+    if (mouseIsPressed) {
+        drawRectangle(mouseX, mouseY)
+    } else {
+        fill(255);
+    }
 }
-console.log("this");
-console.log("this");
-console.log("this");
-console.log("this");
 
-console.log("this");
-console.log("this");
-console.log("this");
-console.log("this");
-
-console.log("this");
+function drawRectangle(x, y) {
+    rect(x,y,50,50)
+}
