@@ -4,7 +4,7 @@ function Particle(x, y, hue, firework) {
     this.lifespan = 255
 
     if(firework) {
-        this.vel = createVector(0,random(-11,-8))
+        this.vel = createVector(0,random(-16,-10))
     } else {
         this.vel = p5.Vector.random2D()
         this.vel.mult(random(2,10))
